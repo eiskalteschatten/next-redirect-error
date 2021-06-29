@@ -32,9 +32,4 @@ module.exports = {
     REACT_APP_EN_DOMAIN: process.env.REACT_APP_EN_DOMAIN,
     REACT_APP_DE_DOMAIN: process.env.REACT_APP_DE_DOMAIN
   },
-  async rewrites() {
-    return [
-      { source: '/bookjournal/api/check-for-updates/', destination: '/api/bookjournal/check-for-updates/' }
-    ];
-  },
 };
