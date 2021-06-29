@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 
 import { IntlContext } from '../../intl/IntlContext';
 import useTranslation from '../../intl/useTranslation';
@@ -11,7 +10,6 @@ interface Props {
 
 const MainLayout: React.FC<Props> = ({ children }) => {
   const { locale } = useContext(IntlContext);
-  const router = useRouter();
 
   return (
     <>
